@@ -1,0 +1,151 @@
+Here’s a comprehensive `.gitignore` file for a Python project. It covers Python artifacts, virtual environments, IDE settings, testing, environment variables, logs, and build files.
+
+gitignore
+
+````gitignore
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version
+
+# ==============================
+# Virtual Environments
+# ==============================
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# ==============================
+# Environment Variables & Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# ==============================
+# Distribution / Packaging
+# ==============================
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+wheels/
+*.egg-info/
+.installed.cfg
+MANIFEST
+
+# ==============================
+# Testing & Coverage
+# ==============================
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+junit.xml
+test-results/
+
+# ==============================
+# Type Checking & Linting
+# ==============================
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.pyright/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ==============================
+# IDEs & Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==============================
+# Logs & Temporary Files
+# ==============================
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ==============================
+# Operating Systems
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Python Build Tools
+# ==============================
+pip-wheel-metadata/
+poetry.toml
+
+# ==============================
+# Frameworks
+# ==============================
+instance/
+.webassets-cache/
+
+# Django
+*.pot
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Flask
+instance/
+
+# ==============================
+# Celery
+# ==============================
+celerybeat-schedule
+celerybeat.pid
+
+# ==============================
+# PyInstaller
+# ==============================
+*.manifest
+*.spec
+
+# ==============================
+# Miscellaneous
+# ==============================
+.cache/
+.pybuild/
+site/
+```
+
+**Usage:**
+1. Create a file named `.gitignore` in your project's root directory.
+2. Paste the contents above.
+3. Save and commit it to Git.
+
+**Tip:** Keep `.env.example` in Git so other developers know which environment variables they need, but never commit your actual `.env` file.
+````
