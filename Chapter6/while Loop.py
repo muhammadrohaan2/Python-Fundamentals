@@ -3,8 +3,7 @@ while count <=10:
     print(count)
     count += 2
 
-
-#example
+#example 
 answer = ""
 while answer != "yes":
     answer = input ("Do you agree? (yes/no)")

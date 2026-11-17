@@ -9,7 +9,7 @@ else:
 
 
 #example 2
-names = ['Kamara', 'Tuba', 'Maria', 'Mounika']
+names = ['Kamara', '', 'Maria', 'Mounika']
 
 for name in names:
     if name is None:
